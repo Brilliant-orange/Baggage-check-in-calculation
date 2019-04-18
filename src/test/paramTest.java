@@ -22,7 +22,10 @@ public void initialize() {
 @DataProvider(name = "test1")
 public static Object[][] primeNumbers() {
     return new Object[][] { 
-    	{ 2, true }, 
+    	{ "in","T","A", "J",3333,3,198,90,1499.85},
+    	{ "in","T","A", "J",3333,3,264,90,2499.75},
+    	{ "in","T","A", "W",3333,3,264,90,1499.85},
+    	{ "in","T","A", "W",3333,3,243,90,2499.75}
     	};
 }
 
@@ -37,7 +40,11 @@ public static Object[][] primeNumbers() {
 	 a.circle=circle;
 	 a.kgsum=kgsum;
 	 a.expectedtotal=expectedtotal;
-	 Assert.assertEquals(a.expectedtotal,a.sum());
+	 boolean c=false;
+	 if(expectedtotal==a.sum()) {
+		 c=true;
+	 }
+	 Assert.assertEquals(c,true);
  }
 
 
