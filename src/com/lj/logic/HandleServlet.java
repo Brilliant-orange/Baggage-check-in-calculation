@@ -66,7 +66,6 @@ public class HandleServlet extends HttpServlet {
 				else {
 					Totalprice=(weight-30)*price*(1.5/100);
 				}
-				
 			}
 			else if(cabinType.equals("经济舱")) {
 				if(weight<=20) {
